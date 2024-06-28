@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNSSA Donation Slip</title>
+    <link rel="stylesheet" href="style.css">
+    <link  rel="favicon" href="snssa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <header>
+        <img src="snssa.png" alt="Padhega India Logo">
+        <h4 class="mainname">SNSSA - Donation Auto Slip Generate</h4>
+
+    </header>
+    <main>
+        <br>
+        <label for="name">દાતાશ્રી નું નામ</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Enter Name" id="name">
+
+        <label for="tarikh">તારીખ</label>
+        <input required type="date" name="tarikh"  placeholder="Enter Date" id="tarikh">
+        
+        <label for="rakam">રકમ</label>
+        <input required type="text" name="rakam"  placeholder="Enter Amount" id="rakam">
+        
+        <label for="photo">સ્લીપનો ફોટો</label>
+        <input required type="text" name="photo"  placeholder="Enter Image Link" id="photo">
+        
+        <Button id="submitBtn">Get Post</Button>
+
+
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
